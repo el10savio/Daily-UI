@@ -40,6 +40,9 @@ header {
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
     display: flex;
     flex-direction: column;
+    font-family: 'Lato';
+    font-weight: 700;
+    color: whitesmoke;
 }
 
 .main * {
@@ -48,10 +51,47 @@ header {
 }
 
 .display {
-    border-bottom: 2px solid whitesmoke;
-
+    border-bottom: 2px solid rgba(0, 0, 0, 0.25);
+    display: flex;
+    justify-content: space-around;
+    font-size: 500%;
 }
 
 .entry {
     flex: 1 1 15em;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: space-around;
+}
+
+.entry-row {
+    /* flex: 1 1 15em; */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: space-around;
+}
+
+.button {
+    border: 1px solid rgba(0, 0, 0, 0.25);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    width: calc(100% * (1/4));
+    transition: .6s ease;
+}
+
+.button:hover {
+    font-size: 150%;
+}
+
+.enter {
+    flex: 2 0 0;
+    background-color: lawngreen;
+}
+
+.bottom-row * {
+    border-bottom: transparent;
 }
